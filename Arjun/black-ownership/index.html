@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playground</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas class="webgl"></canvas>
+  <script type="module" src="/main.js"></script>
+  <div id="sliderContainer">
+    <div id="valueLabel"></div>
+    <input id="yearSlider" type="range" min="1994" max="2021" value="1994" class="slider">
+    <div id="subtitle">Move the slider to see how the data changes over time.</div>
+  </div>
+
+</body>
+</html>
+
+<!--
+IDEAS:
+
+- figure out how to load in some houses? maybe have them on a street of sorts.
+- houses will grow and shrink in size according to the percentage
+
+- for dates, have a scroll animation
+    - turn off zoom controls, keep pan controls
+    - get distance from top, divide by time to get a tick for "years"
+    - round to the nearest, or don't expand until the next date crosses a certain point.
+        - though, would be better to just round to nearest scroll point
+    - the dates can be markdown elements on top of the graphics. Have some sort of white space between
+    - then, some scrolling timeline? figure out functionality regarding that.
+
+    - figure out how to scale objects while having them stay anchored to a position on bottom (basically grow upwards)
+-->
